@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "api": 1,
+  "id": "core",
+  "dependencies": [],
+  "replace": false,
+  "files": [
+    "definitions.json"
+  ]
+}

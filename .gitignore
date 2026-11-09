@@ -1,0 +1,12 @@
+/.tools/
+/.dependencies/
+/out/
+/build/
+/dist/
+/user/settings.json
+/user/settings.json.tmp
+/user/last-error.txt
+/user/imgui.ini
+*.user
+*.log
+__pycache__/

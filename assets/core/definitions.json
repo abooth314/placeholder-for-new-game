@@ -1,0 +1,2913 @@
+{
+  "schema": 1,
+  "factions": [
+    {
+      "id": "core:iron",
+      "name": "The Iron Banner",
+      "short": "Iron",
+      "color": [
+        0.27,
+        0.59,
+        0.96
+      ]
+    },
+    {
+      "id": "core:ashen",
+      "name": "The Ashen Court",
+      "short": "Ashen",
+      "color": [
+        0.87,
+        0.24,
+        0.25
+      ]
+    },
+    {
+      "id": "core:verdant",
+      "name": "The Verdant Pact",
+      "short": "Verdant",
+      "color": [
+        0.27,
+        0.73,
+        0.47
+      ]
+    },
+    {
+      "id": "core:sunward",
+      "name": "The Sunward League",
+      "short": "Sunward",
+      "color": [
+        0.96,
+        0.71,
+        0.22
+      ]
+    }
+  ],
+  "attacks": [
+    {
+      "id": "core:sword",
+      "mode": "melee",
+      "damage": 18,
+      "range": 2.8,
+      "cooldown": 1.05,
+      "sound": "core:steel"
+    },
+    {
+      "id": "core:arrow",
+      "mode": "projectile",
+      "damage": 14,
+      "range": 24,
+      "cooldown": 1.65,
+      "sound": "core:bow",
+      "flight_speed": 28,
+      "arc": 0.08
+    },
+    {
+      "id": "core:mend",
+      "mode": "heal",
+      "damage": 17,
+      "range": 15,
+      "cooldown": 1.8,
+      "sound": "core:heal"
+    },
+    {
+      "id": "core:stone",
+      "mode": "projectile",
+      "damage": 62,
+      "range": 38,
+      "cooldown": 5,
+      "sound": "core:siege",
+      "flight_speed": 18,
+      "arc": 0.24,
+      "splash": 5.5,
+      "building_multiplier": 2.4
+    }
+  ],
+  "units": [
+    {
+      "id": "core:swordsman",
+      "name": "Swordsman",
+      "attack": "core:sword",
+      "appearance": "core:soldier",
+      "health": 115,
+      "speed": 3.6,
+      "capabilities": [
+        "move",
+        "melee",
+        "guard"
+      ],
+      "formation_depth": 1,
+      "weight": 5,
+      "radius": 0.58
+    },
+    {
+      "id": "core:archer",
+      "name": "Archer",
+      "attack": "core:arrow",
+      "appearance": "core:archer",
+      "health": 66,
+      "speed": 3.5,
+      "capabilities": [
+        "move",
+        "projectile"
+      ],
+      "formation_depth": -7,
+      "weight": 3,
+      "radius": 0.58
+    },
+    {
+      "id": "core:cleric",
+      "name": "Cleric",
+      "attack": "core:mend",
+      "appearance": "core:cleric",
+      "health": 78,
+      "speed": 3.3,
+      "capabilities": [
+        "move",
+        "heal"
+      ],
+      "formation_depth": -9,
+      "weight": 2,
+      "radius": 0.58
+    },
+    {
+      "id": "core:catapult",
+      "name": "Catapult",
+      "attack": "core:stone",
+      "appearance": "core:catapult",
+      "health": 150,
+      "speed": 2,
+      "capabilities": [
+        "move",
+        "projectile",
+        "siege"
+      ],
+      "formation_depth": -15,
+      "weight": 1,
+      "radius": 1.2
+    }
+  ],
+  "visuals": [
+    {
+      "id": "core:soldier",
+      "parts": [
+        {
+          "primitive": "box",
+          "center": [
+            -0.22,
+            0.35,
+            0
+          ],
+          "size": [
+            0.27,
+            0.55,
+            0.43
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 1
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -0.22,
+            0.78,
+            0
+          ],
+          "size": [
+            0.27,
+            0.48,
+            0.3
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 1
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0.22,
+            0.35,
+            0
+          ],
+          "size": [
+            0.27,
+            0.55,
+            0.43
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 2
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0.22,
+            0.78,
+            0
+          ],
+          "size": [
+            0.27,
+            0.48,
+            0.3
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 2
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            1.3,
+            0
+          ],
+          "size": [
+            0.78,
+            0.8,
+            0.5
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            1.28,
+            0.27
+          ],
+          "size": [
+            0.62,
+            0.62,
+            0.05
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 1,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            0.96,
+            0
+          ],
+          "size": [
+            0.8,
+            0.12,
+            0.52
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "ellipsoid",
+          "center": [
+            0,
+            2.02,
+            0
+          ],
+          "size": [
+            0.32,
+            0.35,
+            0.3
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            2.03,
+            0.29
+          ],
+          "size": [
+            0.37,
+            0.08,
+            0.035
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            -0.45,
+            1.6,
+            0
+          ],
+          "size": [
+            0.14,
+            0.14,
+            0.14
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            -0.57,
+            1.15,
+            0.3
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0.45,
+            1.6,
+            0
+          ],
+          "size": [
+            0.14,
+            0.14,
+            0.14
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 3,
+          "end": [
+            0.64,
+            1.3,
+            0.3
+          ]
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -0.58,
+            1.3,
+            0.47
+          ],
+          "size": [
+            0.62,
+            0.9,
+            0.1
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 1,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -0.58,
+            1.3,
+            0.54
+          ],
+          "size": [
+            0.07,
+            0.68,
+            0.02
+          ],
+          "color": [
+            0.9,
+            0.69,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -0.58,
+            1.3,
+            0.54
+          ],
+          "size": [
+            0.48,
+            0.07,
+            0.02
+          ],
+          "color": [
+            0.9,
+            0.69,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0.65,
+            1.3,
+            0.3
+          ],
+          "size": [
+            0.085,
+            0.4,
+            0.085
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 3
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0.65,
+            1.55,
+            0.3
+          ],
+          "size": [
+            0.42,
+            0.07,
+            0.09
+          ],
+          "color": [
+            0.9,
+            0.69,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 3
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0.65,
+            2.02,
+            0.3
+          ],
+          "size": [
+            0.12,
+            0.92,
+            0.05
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 3
+        },
+        {
+          "primitive": "cone",
+          "center": [
+            0,
+            2.3,
+            0
+          ],
+          "size": [
+            0.22,
+            0.28,
+            0.04
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 1,
+          "motion": 0
+        }
+      ]
+    },
+    {
+      "id": "core:archer",
+      "parts": [
+        {
+          "primitive": "box",
+          "center": [
+            -0.22,
+            0.35,
+            0
+          ],
+          "size": [
+            0.27,
+            0.55,
+            0.43
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 1
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -0.22,
+            0.78,
+            0
+          ],
+          "size": [
+            0.27,
+            0.48,
+            0.3
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 1
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0.22,
+            0.35,
+            0
+          ],
+          "size": [
+            0.27,
+            0.55,
+            0.43
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 2
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0.22,
+            0.78,
+            0
+          ],
+          "size": [
+            0.27,
+            0.48,
+            0.3
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 2
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            1.3,
+            0
+          ],
+          "size": [
+            0.78,
+            0.8,
+            0.5
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            1.28,
+            0.27
+          ],
+          "size": [
+            0.62,
+            0.62,
+            0.05
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 1,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            0.96,
+            0
+          ],
+          "size": [
+            0.8,
+            0.12,
+            0.52
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "ellipsoid",
+          "center": [
+            0,
+            2.02,
+            0
+          ],
+          "size": [
+            0.32,
+            0.35,
+            0.3
+          ],
+          "color": [
+            0.78,
+            0.55,
+            0.36
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            2.03,
+            0.29
+          ],
+          "size": [
+            0.37,
+            0.08,
+            0.035
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            -0.45,
+            1.6,
+            0
+          ],
+          "size": [
+            0.14,
+            0.14,
+            0.14
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            -0.57,
+            1.15,
+            0.3
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0.45,
+            1.6,
+            0
+          ],
+          "size": [
+            0.14,
+            0.14,
+            0.14
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 3,
+          "end": [
+            0.64,
+            1.3,
+            0.3
+          ]
+        },
+        {
+          "primitive": "cone",
+          "center": [
+            0,
+            2.2,
+            0
+          ],
+          "size": [
+            0.4,
+            0.3,
+            0.04
+          ],
+          "color": [
+            0.24,
+            0.37,
+            0.19
+          ],
+          "tint": 0.7,
+          "motion": 0
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0.64,
+            0.8,
+            0.4
+          ],
+          "size": [
+            0.045,
+            0.045,
+            0.045
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 3,
+          "end": [
+            0.7,
+            1.48,
+            0.74
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0.7,
+            1.48,
+            0.74
+          ],
+          "size": [
+            0.045,
+            0.045,
+            0.045
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 3,
+          "end": [
+            0.64,
+            2.2,
+            0.4
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0.64,
+            0.8,
+            0.4
+          ],
+          "size": [
+            0.012,
+            0.012,
+            0.012
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 0,
+          "motion": 3,
+          "end": [
+            0.64,
+            2.2,
+            0.4
+          ]
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -0.25,
+            1.5,
+            -0.4
+          ],
+          "size": [
+            0.28,
+            0.9,
+            0.22
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0
+        }
+      ]
+    },
+    {
+      "id": "core:cleric",
+      "parts": [
+        {
+          "primitive": "cone",
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.55,
+            1.55,
+            0.3
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 0.15,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            1.5,
+            0
+          ],
+          "size": [
+            0.65,
+            0.55,
+            0.48
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 0.15,
+          "motion": 0
+        },
+        {
+          "primitive": "ellipsoid",
+          "center": [
+            0,
+            2.02,
+            0
+          ],
+          "size": [
+            0.32,
+            0.35,
+            0.3
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            2.03,
+            0.29
+          ],
+          "size": [
+            0.37,
+            0.08,
+            0.035
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            -0.45,
+            1.6,
+            0
+          ],
+          "size": [
+            0.14,
+            0.14,
+            0.14
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            -0.57,
+            1.15,
+            0.3
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0.45,
+            1.6,
+            0
+          ],
+          "size": [
+            0.14,
+            0.14,
+            0.14
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 0,
+          "motion": 3,
+          "end": [
+            0.64,
+            1.3,
+            0.3
+          ]
+        },
+        {
+          "primitive": "cone",
+          "center": [
+            0,
+            2.25,
+            0
+          ],
+          "size": [
+            0.36,
+            0.24,
+            0.05
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 0.15,
+          "motion": 0
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0.69,
+            0.12,
+            0.3
+          ],
+          "size": [
+            0.055,
+            0.055,
+            0.055
+          ],
+          "color": [
+            0.9,
+            0.69,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 3,
+          "end": [
+            0.69,
+            2.8,
+            0.3
+          ]
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0.69,
+            2.55,
+            0.3
+          ],
+          "size": [
+            0.5,
+            0.085,
+            0.09
+          ],
+          "color": [
+            0.9,
+            0.69,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 3
+        },
+        {
+          "primitive": "ellipsoid",
+          "center": [
+            0.69,
+            2.75,
+            0.3
+          ],
+          "size": [
+            0.14,
+            0.14,
+            0.14
+          ],
+          "color": [
+            0.92,
+            1,
+            0.65
+          ],
+          "tint": 0,
+          "motion": 0
+        }
+      ]
+    },
+    {
+      "id": "core:catapult",
+      "parts": [
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            0.6,
+            0
+          ],
+          "size": [
+            2,
+            0.3,
+            2.8
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            0.9,
+            0
+          ],
+          "size": [
+            1.6,
+            0.12,
+            2.5
+          ],
+          "color": [
+            0.5,
+            0.32,
+            0.17
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            -1.23,
+            0.42,
+            -1
+          ],
+          "size": [
+            0.46,
+            0.46,
+            0.46
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            -0.9700000000000001,
+            0.42,
+            -1
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            -1.23,
+            0.42,
+            1
+          ],
+          "size": [
+            0.46,
+            0.46,
+            0.46
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            -0.9700000000000001,
+            0.42,
+            1
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            -0.66,
+            0.8,
+            -0.9
+          ],
+          "size": [
+            0.13,
+            0.13,
+            0.13
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            -0.66,
+            2.3,
+            0
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            -0.66,
+            0.8,
+            0.9
+          ],
+          "size": [
+            0.13,
+            0.13,
+            0.13
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            -0.66,
+            2.3,
+            0
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0.9700000000000001,
+            0.42,
+            -1
+          ],
+          "size": [
+            0.46,
+            0.46,
+            0.46
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            1.23,
+            0.42,
+            -1
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0.9700000000000001,
+            0.42,
+            1
+          ],
+          "size": [
+            0.46,
+            0.46,
+            0.46
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            1.23,
+            0.42,
+            1
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0.66,
+            0.8,
+            -0.9
+          ],
+          "size": [
+            0.13,
+            0.13,
+            0.13
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            0.66,
+            2.3,
+            0
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0.66,
+            0.8,
+            0.9
+          ],
+          "size": [
+            0.13,
+            0.13,
+            0.13
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            0.66,
+            2.3,
+            0
+          ]
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0,
+            1.1,
+            -1.5
+          ],
+          "size": [
+            0.16,
+            0.16,
+            0.16
+          ],
+          "color": [
+            0.57,
+            0.37,
+            0.18
+          ],
+          "tint": 0,
+          "motion": 3,
+          "end": [
+            0,
+            2.7,
+            1.4
+          ]
+        },
+        {
+          "primitive": "ellipsoid",
+          "center": [
+            0,
+            2.7,
+            1.4
+          ],
+          "size": [
+            0.42,
+            0.42,
+            0.42
+          ],
+          "color": [
+            0.5,
+            0.52,
+            0.49
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -0.8,
+            2,
+            -0.8
+          ],
+          "size": [
+            0.5,
+            0.7,
+            0.08
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 1,
+          "motion": 0
+        }
+      ]
+    },
+    {
+      "id": "core:castle",
+      "parts": [
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            0.2,
+            0
+          ],
+          "size": [
+            11,
+            0.4,
+            11
+          ],
+          "color": [
+            0.33,
+            0.36,
+            0.33
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            2.5,
+            0
+          ],
+          "size": [
+            4.8,
+            5,
+            5.2
+          ],
+          "color": [
+            0.58,
+            0.58,
+            0.51
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "roof",
+          "center": [
+            0,
+            5,
+            0
+          ],
+          "size": [
+            5.4,
+            2.1,
+            5.8
+          ],
+          "color": [
+            0.25,
+            0.32,
+            0.35
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "cone",
+          "center": [
+            -4.5,
+            0,
+            -4.5
+          ],
+          "size": [
+            1.3,
+            5.5,
+            1.3
+          ],
+          "color": [
+            0.55,
+            0.57,
+            0.51
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "cone",
+          "center": [
+            -4.5,
+            5.4,
+            -4.5
+          ],
+          "size": [
+            1.5,
+            0.4,
+            1.5
+          ],
+          "color": [
+            0.73,
+            0.72,
+            0.62
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -3.37,
+            6.1,
+            -4.5
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -4.5,
+            6.1,
+            -3.37
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -5.63,
+            6.1,
+            -4.5
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -4.5,
+            6.1,
+            -5.63
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "cone",
+          "center": [
+            -4.5,
+            0,
+            4.5
+          ],
+          "size": [
+            1.3,
+            5.5,
+            1.3
+          ],
+          "color": [
+            0.55,
+            0.57,
+            0.51
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "cone",
+          "center": [
+            -4.5,
+            5.4,
+            4.5
+          ],
+          "size": [
+            1.5,
+            0.4,
+            1.5
+          ],
+          "color": [
+            0.73,
+            0.72,
+            0.62
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -3.37,
+            6.1,
+            4.5
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -4.5,
+            6.1,
+            5.63
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -5.63,
+            6.1,
+            4.5
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -4.5,
+            6.1,
+            3.37
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -4.5,
+            1.6,
+            0
+          ],
+          "size": [
+            0.7,
+            3.2,
+            7.5
+          ],
+          "color": [
+            0.55,
+            0.57,
+            0.51
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "cone",
+          "center": [
+            4.5,
+            0,
+            -4.5
+          ],
+          "size": [
+            1.3,
+            5.5,
+            1.3
+          ],
+          "color": [
+            0.55,
+            0.57,
+            0.51
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "cone",
+          "center": [
+            4.5,
+            5.4,
+            -4.5
+          ],
+          "size": [
+            1.5,
+            0.4,
+            1.5
+          ],
+          "color": [
+            0.73,
+            0.72,
+            0.62
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            5.63,
+            6.1,
+            -4.5
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            4.5,
+            6.1,
+            -3.37
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            3.37,
+            6.1,
+            -4.5
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            4.5,
+            6.1,
+            -5.63
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "cone",
+          "center": [
+            4.5,
+            0,
+            4.5
+          ],
+          "size": [
+            1.3,
+            5.5,
+            1.3
+          ],
+          "color": [
+            0.55,
+            0.57,
+            0.51
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "cone",
+          "center": [
+            4.5,
+            5.4,
+            4.5
+          ],
+          "size": [
+            1.5,
+            0.4,
+            1.5
+          ],
+          "color": [
+            0.73,
+            0.72,
+            0.62
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            5.63,
+            6.1,
+            4.5
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            4.5,
+            6.1,
+            5.63
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            3.37,
+            6.1,
+            4.5
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            4.5,
+            6.1,
+            3.37
+          ],
+          "size": [
+            0.65,
+            0.8,
+            0.65
+          ],
+          "color": [
+            0.65,
+            0.65,
+            0.57
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            4.5,
+            1.6,
+            0
+          ],
+          "size": [
+            0.7,
+            3.2,
+            7.5
+          ],
+          "color": [
+            0.55,
+            0.57,
+            0.51
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            1.6,
+            -4.5
+          ],
+          "size": [
+            8,
+            3.2,
+            0.7
+          ],
+          "color": [
+            0.55,
+            0.57,
+            0.51
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -3,
+            1.6,
+            4.5
+          ],
+          "size": [
+            3,
+            3.2,
+            0.7
+          ],
+          "color": [
+            0.55,
+            0.57,
+            0.51
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            3,
+            1.6,
+            4.5
+          ],
+          "size": [
+            3,
+            3.2,
+            0.7
+          ],
+          "color": [
+            0.55,
+            0.57,
+            0.51
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "beam",
+          "center": [
+            0,
+            5.5,
+            0
+          ],
+          "size": [
+            0.06,
+            0.06,
+            0.06
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            0,
+            9,
+            0
+          ]
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0.8,
+            8.3,
+            0
+          ],
+          "size": [
+            1.6,
+            1.1,
+            0.06
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 1,
+          "motion": 0
+        }
+      ]
+    },
+    {
+      "id": "core:tree",
+      "parts": [
+        {
+          "primitive": "cone",
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.22,
+            3.8,
+            0.11
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "ellipsoid",
+          "center": [
+            0,
+            4,
+            0
+          ],
+          "size": [
+            1.65,
+            1.7,
+            1.6
+          ],
+          "color": [
+            0.23,
+            0.4,
+            0.12
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "ellipsoid",
+          "center": [
+            0.9,
+            3.4,
+            0.1
+          ],
+          "size": [
+            1.05,
+            1.1,
+            1.1
+          ],
+          "color": [
+            0.32,
+            0.47,
+            0.16
+          ],
+          "tint": 0,
+          "motion": 0
+        }
+      ]
+    },
+    {
+      "id": "core:house",
+      "parts": [
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            1.1,
+            0
+          ],
+          "size": [
+            3,
+            2.2,
+            3.5
+          ],
+          "color": [
+            0.78,
+            0.71,
+            0.54
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "roof",
+          "center": [
+            0,
+            2.2,
+            0
+          ],
+          "size": [
+            3.5,
+            1.5,
+            4
+          ],
+          "color": [
+            0.49,
+            0.25,
+            0.13
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            0.75,
+            1.77
+          ],
+          "size": [
+            0.7,
+            1.5,
+            0.06
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -1,
+            1.5,
+            1.78
+          ],
+          "size": [
+            0.45,
+            0.6,
+            0.06
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            1,
+            1.5,
+            1.78
+          ],
+          "size": [
+            0.45,
+            0.6,
+            0.06
+          ],
+          "color": [
+            0.2,
+            0.25,
+            0.27
+          ],
+          "tint": 0,
+          "motion": 0
+        }
+      ]
+    },
+    {
+      "id": "core:bridge",
+      "parts": [
+        {
+          "primitive": "box",
+          "center": [
+            -3.1,
+            0.65,
+            0
+          ],
+          "size": [
+            0.25,
+            0.2,
+            6
+          ],
+          "color": [
+            0.62,
+            0.58,
+            0.47
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -3.1,
+            0.42,
+            -2.8
+          ],
+          "size": [
+            0.35,
+            1.1,
+            0.35
+          ],
+          "color": [
+            0.62,
+            0.58,
+            0.47
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -3.1,
+            0.42,
+            0
+          ],
+          "size": [
+            0.35,
+            1.1,
+            0.35
+          ],
+          "color": [
+            0.62,
+            0.58,
+            0.47
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -3.1,
+            0.42,
+            2.8
+          ],
+          "size": [
+            0.35,
+            1.1,
+            0.35
+          ],
+          "color": [
+            0.62,
+            0.58,
+            0.47
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            3.1,
+            0.65,
+            0
+          ],
+          "size": [
+            0.25,
+            0.2,
+            6
+          ],
+          "color": [
+            0.62,
+            0.58,
+            0.47
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            3.1,
+            0.42,
+            -2.8
+          ],
+          "size": [
+            0.35,
+            1.1,
+            0.35
+          ],
+          "color": [
+            0.62,
+            0.58,
+            0.47
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            3.1,
+            0.42,
+            0
+          ],
+          "size": [
+            0.35,
+            1.1,
+            0.35
+          ],
+          "color": [
+            0.62,
+            0.58,
+            0.47
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            3.1,
+            0.42,
+            2.8
+          ],
+          "size": [
+            0.35,
+            1.1,
+            0.35
+          ],
+          "color": [
+            0.62,
+            0.58,
+            0.47
+          ],
+          "tint": 0,
+          "motion": 0
+        }
+      ]
+    },
+    {
+      "id": "core:horse",
+      "parts": [
+        {
+          "primitive": "ellipsoid",
+          "center": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.55,
+            0.55,
+            1.1
+          ],
+          "color": [
+            0.36,
+            0.23,
+            0.14
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "ellipsoid",
+          "center": [
+            0,
+            1.7,
+            1
+          ],
+          "size": [
+            0.27,
+            0.6,
+            0.35
+          ],
+          "color": [
+            0.36,
+            0.23,
+            0.14
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "ellipsoid",
+          "center": [
+            0,
+            2.05,
+            1.25
+          ],
+          "size": [
+            0.3,
+            0.3,
+            0.5
+          ],
+          "color": [
+            0.36,
+            0.23,
+            0.14
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -0.36,
+            0.5,
+            -0.7
+          ],
+          "size": [
+            0.19,
+            1,
+            0.23
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            -0.36,
+            0.5,
+            0.7
+          ],
+          "size": [
+            0.19,
+            1,
+            0.23
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0.36,
+            0.5,
+            -0.7
+          ],
+          "size": [
+            0.19,
+            1,
+            0.23
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0.36,
+            0.5,
+            0.7
+          ],
+          "size": [
+            0.19,
+            1,
+            0.23
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0
+        },
+        {
+          "primitive": "box",
+          "center": [
+            0,
+            1.5,
+            0
+          ],
+          "size": [
+            0.9,
+            0.18,
+            0.8
+          ],
+          "color": [
+            0.82,
+            0.81,
+            0.67
+          ],
+          "tint": 1,
+          "motion": 0
+        }
+      ]
+    },
+    {
+      "id": "core:projectile",
+      "parts": [
+        {
+          "primitive": "beam",
+          "center": [
+            0,
+            0,
+            -0.5
+          ],
+          "size": [
+            0.04,
+            0.04,
+            0.04
+          ],
+          "color": [
+            0.3,
+            0.17,
+            0.08
+          ],
+          "tint": 0,
+          "motion": 0,
+          "end": [
+            0,
+            0,
+            0.7
+          ]
+        },
+        {
+          "primitive": "cone",
+          "center": [
+            0,
+            0,
+            0.65
+          ],
+          "size": [
+            0.1,
+            0.28,
+            0.01
+          ],
+          "color": [
+            0.62,
+            0.68,
+            0.69
+          ],
+          "tint": 0,
+          "motion": 0
+        }
+      ]
+    },
+    {
+      "id": "core:effect",
+      "parts": [
+        {
+          "primitive": "ellipsoid",
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.3,
+            0.3,
+            0.3
+          ],
+          "color": [
+            1,
+            0.83,
+            0.36
+          ],
+          "tint": 1,
+          "motion": 0
+        }
+      ]
+    }
+  ],
+  "sounds": [
+    {
+      "id": "core:steel",
+      "duration": 0.22,
+      "frequency": 1200,
+      "end_frequency": 450,
+      "noise": 0.4,
+      "tone": 0.5,
+      "gain": 0.4,
+      "priority": 3
+    },
+    {
+      "id": "core:bow",
+      "duration": 0.17,
+      "frequency": 430,
+      "end_frequency": 140,
+      "noise": 0.5,
+      "tone": 0.4,
+      "gain": 0.35,
+      "priority": 2
+    },
+    {
+      "id": "core:siege",
+      "duration": 0.7,
+      "frequency": 95,
+      "end_frequency": 28,
+      "noise": 0.65,
+      "tone": 0.8,
+      "gain": 0.8,
+      "priority": 5
+    },
+    {
+      "id": "core:impact",
+      "duration": 0.35,
+      "frequency": 180,
+      "end_frequency": 45,
+      "noise": 0.8,
+      "tone": 0.4,
+      "gain": 0.5,
+      "priority": 3
+    },
+    {
+      "id": "core:heal",
+      "duration": 0.68,
+      "frequency": 520,
+      "end_frequency": 1040,
+      "noise": 0.04,
+      "tone": 0.8,
+      "gain": 0.36,
+      "priority": 3
+    },
+    {
+      "id": "core:collapse",
+      "duration": 1.2,
+      "frequency": 100,
+      "end_frequency": 22,
+      "noise": 0.8,
+      "tone": 0.7,
+      "gain": 0.9,
+      "priority": 8
+    },
+    {
+      "id": "core:hoof",
+      "duration": 0.14,
+      "frequency": 120,
+      "end_frequency": 45,
+      "noise": 0.45,
+      "tone": 0.6,
+      "gain": 0.3,
+      "priority": 1
+    },
+    {
+      "id": "core:magic",
+      "duration": 0.45,
+      "frequency": 180,
+      "end_frequency": 650,
+      "noise": 0.25,
+      "tone": 0.7,
+      "gain": 0.4,
+      "priority": 4
+    }
+  ],
+  "maps": [
+    {
+      "id": "core:green_march",
+      "name": "The Green March",
+      "description": "Open pasture, rolling hills and diverging approaches",
+      "radius": 70,
+      "relief": 3.4,
+      "rivers": 0,
+      "grass": [
+        0.37,
+        0.51,
+        0.24
+      ],
+      "water": [
+        0.15,
+        0.43,
+        0.59
+      ]
+    },
+    {
+      "id": "core:three_crossings",
+      "name": "Three Crossings",
+      "description": "Three waterways and nine raised bridge corridors",
+      "radius": 70,
+      "relief": 2.2,
+      "rivers": 3,
+      "grass": [
+        0.32,
+        0.47,
+        0.24
+      ],
+      "water": [
+        0.13,
+        0.43,
+        0.61
+      ]
+    }
+  ],
+  "scenario": {
+    "starting_per_faction": 16,
+    "reinforce_seconds": 2.5,
+    "relations": [
+      [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        1
+      ]
+    ]
+  },
+  "presets": [
+    {
+      "id": "core:war",
+      "name": "Every kingdom for itself",
+      "relations": [
+        [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "core:peace",
+      "name": "Armistice",
+      "relations": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "core:alliances",
+      "name": "Two alliances",
+      "relations": [
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          1
+        ]
+      ]
+    }
+  ]
+}

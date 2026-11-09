@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "api": 1,
+  "id": "wardens",
+  "dependencies": [
+    "core"
+  ],
+  "replace": false,
+  "files": [
+    "definitions.json"
+  ]
+}

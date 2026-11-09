@@ -1,0 +1,9 @@
+* text=auto
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.json text eol=lf
+*.lua text eol=lf
+*.md text eol=lf
+*.ps1 text eol=crlf
+# Preserve provided reference bytes, including valid CRLF line endings.
+docs/references/* -text whitespace=cr-at-eol
